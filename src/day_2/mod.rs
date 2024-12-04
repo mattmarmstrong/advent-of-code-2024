@@ -10,7 +10,7 @@ fn parse(input: &str) -> Vec<Vec<usize>> {
         .collect()
 }
 
-fn all_dsc_asc(ln: &Vec<usize>) -> bool {
+fn all_dsc_asc(ln: &[usize]) -> bool {
     let mut ln_iter = ln.iter();
     let first = ln_iter.next().unwrap();
     let mut curr = ln_iter.next().unwrap();
