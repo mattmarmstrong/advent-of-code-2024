@@ -123,10 +123,7 @@ pub fn solve_pt2(input: &str) -> usize {
     updates
         .iter_mut()
         .filter(|u| !check_if_ord(&ord_map, u))
-        .map(|u| {
-            let m = get_median(order(&ord_map, u).as_slice());
-            m
-        })
+        .map(|u| get_median(order(&ord_map, u).as_slice()))
         .sum()
 }
 
